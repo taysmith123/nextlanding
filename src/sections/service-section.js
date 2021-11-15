@@ -50,7 +50,7 @@ export default function ServiceSection() {
     e.preventDefault();
     setVideoOpen(true);
   };
-
+  const ModalVideo = dynamic(() => import("react-modal-video"), { ssr: false });
   return (
     <section sx={{ variant: "section.services" }}>
       <Container sx={styles.containerBox}>
