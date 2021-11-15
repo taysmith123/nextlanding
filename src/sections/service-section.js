@@ -14,7 +14,7 @@ import { keyframes } from "@emotion/core";
 import TextFeature from "components/text-feature";
 import { IoIosPlay } from "react-icons/io";
 import dynamic from "next/dynamic";
-
+import ModalVideo from "react-modal-video";
 import ServiceThumb from "assets/service-thumb.png";
 import shapePattern from "assets/shape-pattern1.png";
 
@@ -50,7 +50,7 @@ export default function ServiceSection() {
     e.preventDefault();
     setVideoOpen(true);
   };
-  const ModalVideo = dynamic(() => import("react-modal-video"), { ssr: false });
+
   return (
     <section sx={{ variant: "section.services" }}>
       <Container sx={styles.containerBox}>
